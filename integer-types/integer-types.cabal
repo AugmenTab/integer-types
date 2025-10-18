@@ -3,6 +3,13 @@ cabal-version: 3.0
 name: integer-types
 version: 0.1.4.1
 
+tested-with:
+  GHC == 9.2.*,
+  GHC == 9.4.*,
+  GHC == 9.6.*,
+  GHC == 9.8.*,
+  GHC == 9.10.*
+
 category: Numeric
 synopsis: Integer, Natural, and Positive
 
@@ -35,7 +42,7 @@ common base
         ViewPatterns
 
     build-depends:
-      , base ^>= 4.16 || ^>= 4.17 || ^>= 4.18 || ^>= 4.19
+      , base ^>= 4.16 || ^>= 4.17 || ^>= 4.18 || ^>= 4.19 || ^>= 4.20
       , deepseq ^>= 1.4.6 || ^>= 1.5
       , hashable ^>= 1.4.1
       , quaalude ^>= 0.0
